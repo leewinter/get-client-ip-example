@@ -1,6 +1,7 @@
-var express = require('express');
-var app = express();
-var clientInfo = require('./lib/clientInfo');
+const express = require('express'),
+  clientInfo = require('./lib/clientInfo');
+let app = express();
+
 
 app.use(express.static('public'));
 
@@ -8,15 +9,15 @@ app.get('/api/getClientHostname', function (req, res) {
   var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   console.log('ip', ip);
 
-  clientInfo.getHostname(ip, function (clientDetails) {    
+  clientInfo.getHostname(ip, function (clientDetails) {
     res.setHeader('Content-Type', 'application/json');
     res.send(
-        JSON.stringify(
-            clientDetails
-          )
-      );
+      JSON.stringify(
+        clientDetails
+      )
+    );
   });
-  
+
 });
 
 app.listen(3000, function () {

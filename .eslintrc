@@ -1,0 +1,22 @@
+{
+    "globals": {
+        "angular": false,
+        "module": false,
+        "inject": false,
+        "exports": false,
+        "require": false,
+        "console": false
+    },
+    "rules": {
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    }
+}
