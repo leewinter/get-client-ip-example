@@ -1,11 +1,5 @@
 {
     "globals": {
-        "angular": false,
-        "module": false,
-        "inject": false,
-        "exports": false,
-        "require": false,
-        "console": false
     },
     "rules": {
     },
