@@ -15,7 +15,7 @@ var getJSON = function(url, callback) {
     xhr.send();
 };
 
-getJSON('/api/getClientHostname',
+getJSON('/api/ClientHostname',
 function(err, data) {
   if (err != null) {
     console.log('Something went wrong: ', err);

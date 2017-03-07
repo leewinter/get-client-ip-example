@@ -1,4 +1,4 @@
-var dns = require('dns');
+const dns = require('dns');
 
 module.exports = {
     getHostname : (ip, cb) => {
@@ -8,7 +8,7 @@ module.exports = {
                 console.log(err.toString());
                 return;
             }
-            var result = {
+            const result = {
                 ip: ip,
                 domains: domains
             };
