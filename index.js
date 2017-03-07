@@ -1,5 +1,5 @@
 const express = require('express'),
-  clientInfo = require('./lib/clientInfo');
+  clientInfo = require('./src/clientInfo');
 let app = express();
 
 
